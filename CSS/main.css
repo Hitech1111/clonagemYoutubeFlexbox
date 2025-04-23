@@ -11,7 +11,7 @@ body {
     position: absolute;
     border: 8px solid gray;
     margin-top: -5px;
-    margin-left: 100px;
+    margin-left: 90px;
     width: 720px;
     height: 490px;
     border-radius: 15px;
@@ -36,7 +36,7 @@ iframe {
 } */
 
 #logoCanalicone {
-    position: absolute;
+    position: relative;
     width: 25px;
     height: 28px;
     border-radius: 15px;
@@ -51,59 +51,77 @@ iframe {
     flex-wrap: wrap;
     font-size: small;
     margin: 0;
-    flex-direction: column;
+    flex-direction: row;
     border: 1px solid blue;
 }
 
-#videosSugeridos {
-    margin-left: 900px;
-    /* border: 1px solid red; */
-    height: 650px;
+#videosdolado {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
+#quase h5,
+#quase h6{
+    margin: 0;
+}
+#quase {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+#videosSugeridos {
+    font-size: 13px;
+    position: relative;
+    left: 850px;
+
+    width: auto;
+    max-width: 350px;
+    height: auto;
+}
+
+
 #capaVideos1 {
-    position: absolute;
-    margin-top: 40px;
-    margin-left: 10px;
-    justify-content: space-around;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
     height: 100px;
     width: 150px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 #tituloVideos1 {
-    padding-left: 3px;
-    padding-top: 30px;
-    margin-left: 160px;
+    display: flex;
+    flex-direction: row;
 }
 
+
 #descricaoVideosSugeridos1 {
-    padding-left: 3px;
-    margin-left: 160px;
-    margin-top: -20px;
+    display: flex;
+    flex-direction: row;
 }
 
 .capaVideos {
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 10px;
-    /* justify-content: space-around; */
+    display: flex;
+    gap: 10px;
+    padding: 10px;
     height: 100px;
     width: 150px;
     border-radius: 15px;
 }
 
 .tituloVideos {
-    padding-left: 3px;
-    padding-top: 30px;
-    margin-top: 50px;
-    margin-left: 160px;
+    display: flex;
+    flex-direction: row;
 }
 
 .descricaoVideosSugeridos {
-    padding-left: 3px;
-    margin-left: 160px;
-    margin-top: -20px;
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 90px;
+    margin-top: -20px; */
 }
 
 #nsei {
@@ -111,7 +129,6 @@ iframe {
     flex-wrap: wrap;
     flex-direction: row;
     max-height: 50px;
-    /* border: 1px solid red; */
     justify-content: space-around;
 }
 
